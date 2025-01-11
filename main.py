@@ -508,53 +508,24 @@ def get_financial_data(ticker):
 
 
 def process_balance_sheet(data):
-    df_1 =pd.DataFrame(data["data"])
-    balance_sheet=df_1.T
-    balance_sheet = balance_sheet[1:]
-    years = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012]
-    
-    balance_sheet.columns = years
+    balance_sheet =pd.DataFrame(data["data"]).T
     return balance_sheet
     
 
 def process_income_statement(data):
-    df_1=pd.DataFrame(data["data"])
-
-    income_statement=df_1.T
-    income_statement = income_statement[1:]
-    years = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012]
-    
-    income_statement.columns = years
+    income_statement=pd.DataFrame(data["data"]).T
     return income_statement
 
 def process_cash_flow(data):
-    df_1=pd.DataFrame(data["data"])
-
-    cash_flow=df_1.T
-    cash_flow = cash_flow[1:]
-    years = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012]
-    
-    cash_flow.columns = years
+    cash_flow=pd.DataFrame(data["data"]).T
     return cash_flow
 
 def process_equity(data):
-    df_1=pd.DataFrame(data["data"])
-
-    equity=df_1.T
-    equity = equity[1:]
-    years = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012]
-    
-    equity.columns = years
+    equity=pd.DataFrame(data["data"]).T
     return equity
 
 def process_ratio(data):
-    df_1=pd.DataFrame(data["data"])
-
-    ratio=df_1.T
-    ratio = ratio[1:]
-    years = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012]
-    
-    ratio.columns = years
+    ratio=pd.DataFrame(data["data"]).T
     return ratio
 
 
