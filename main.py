@@ -14,7 +14,7 @@ from datetime import datetime
 
 ticker_df = pd.read_excel("ticker.xlsx")
 
-st.title('Finance Helper')
+st.title('Finance Genius')
 # Sidebar option
 option = st.sidebar.radio("Select an Option", ('Stock Analysis','Financial Analysis','Budget Analysis','Amortization Calculator'))
 
