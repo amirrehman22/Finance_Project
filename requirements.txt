@@ -1,0 +1,9 @@
+pandas
+requests
+streamlit
+math
+beautifulsoup4
+numpy
+matplotlib
+seaborn
+numpy-financial
